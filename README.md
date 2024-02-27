@@ -57,10 +57,10 @@
   *相關測試資料文章* < https://docs.gitlab.com/ee/ci/testing/ >
 
   3. develop.master部屬在特定主機之上與測試
-     在 '.gitlab-ci.yml' 中定義環境。為了資料安全可用 GitLab 的 Secret Variables加密後儲存，不過這部分個人習慣呼叫Node.js/Express.js傳輸加密。 /n
+     在 '.gitlab-ci.yml' 中定義環境。為了資料安全可用 GitLab 的 Secret Variables加密後儲存，不過這部分個人習慣呼叫Node.js/Express.js傳輸加密。     
      [UI設定環境的方式](https://ithelp.ithome.com.tw/articles/10251547 "link")  [在yml設定環境變數的方式](https://ithelp.ithome.com.tw/articles/10251547 "link")
  ``` yaml
-     stages:
+ stages:
   - test
   - deploy
 
@@ -94,7 +94,7 @@ deploy_to_production:
   1. 好處
   上版、錯誤不影響他人，退版也方便。  
 
-  2.達成方法
+  2. 達成方法
   使用 **K8s** 配合 **nginx** 進行多線任務分配，並且以一個 **Docker** 或 **Pod** 包一個 **API** 為原則。
   也就是說每一個 **API** 資料夾中都會包自己的 **config** 。
 
