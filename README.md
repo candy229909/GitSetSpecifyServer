@@ -105,8 +105,9 @@ deploy_to_production:
 # K8s使用以及可能遇到的狀況(以下可以先不要看，還在整理)
   1. 介紹
      透過master分派任務給node工作，並且達成熱更新(更新不用重啟系統)、API錯誤會更新失敗的狀況。
+     Github裡面的flask基本架構<https://github.com/KarstenSiemer/Kubernetes-gunicorn-flask-hello-world-example/tree/master/Kubernetes/base>
      
-  2. 安裝
+  3. 安裝
      Kubeadm或者[github](https://github.com/kubernetes/kubernetes"link")的檔案。~~拜託不要只能裝github，有很多權限要補~~
      在此用祈禱不要卡在作業系統的proxy還有containerd 的proxy上...聽說封閉內網會有很多意想不到的事件。                           
      
