@@ -1,4 +1,6 @@
-# 目前基準架構設計法
+# 目前基準架構設計法與可能推行步驟   
+  1.API都容器化，並用docker-compose.yml連接。      
+  2.用Kompose將docker-compose.yml轉成 Kubernetes的資源文件。        
 
 # Git
   1. Git 內容定義
